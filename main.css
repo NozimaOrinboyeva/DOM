@@ -1,0 +1,163 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;  
+}
+body{
+    background: linear-gradient(to right, hsl(251,100%, 50%), hsl(24,100%,50%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.asosiy {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(254, 255, 254, 0.8);
+    border-radius: 50%;
+    border:  10px solid  pink;
+    position: relative;
+}
+.asosiy .raqam {
+    --rotation: 0; 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform: rotate(var(--rotation));
+    font-size: 2rem;
+}
+/* .asosiy .raqam1 {
+    --rotation: 30deg;
+} */
+
+.asosiy .raqam1 {
+    transform: rotate(30deg);
+    transform-origin: center;
+}
+
+.asosiy .raqam1 span {
+    transform: rotate(-30deg);
+    display: inline-block;
+}
+
+.asosiy .raqam2 {
+    transform: rotate(60deg);
+    transform-origin: inline-block;
+}
+.asosiy .raqam2 span {
+    transform: rotate(-60deg);
+    display: inline-block;
+}
+.asosiy .raqam3{
+    transform: rotate(90deg);
+    transform-origin: inline-block;
+}
+.asosiy .raqam3 span {
+    transform:  rotate(-90deg);
+    display: inline-block;
+}
+.asosiy .raqam4{
+    transform: rotate(120deg);
+    transform-origin: inline-block;
+}
+.asosiy .raqam4 span {
+    transform:  rotate(-120deg);
+    display: inline-block;
+}
+.asosiy .raqam5{
+    --rotation: 150deg;
+}
+.asosiy .raqam5 span {
+    transform:  rotate(-150deg);
+    display: inline-block;
+}
+.asosiy .raqam6{
+    --rotation: 180deg;
+}
+.asosiy .raqam6 {
+    transform:  rotate(-180deg);
+    display: inline-block;
+}
+.asosiy .raqam7{
+    --rotation: 210deg;
+}
+.asosiy .raqam7 span {
+    transform:  rotate(-210deg);
+    display: inline-block;
+}
+.asosiy .raqam8{
+    --rotation: 240deg;
+}
+.asosiy .raqam8 span {
+    transform:  rotate(-240deg);
+    display: inline-block;
+}
+.asosiy .raqam9{
+    --rotation: 270deg;
+}
+.asosiy .raqam9 span {
+    transform:  rotate(-270deg);
+    display: inline-block;
+}
+.asosiy .raqam10{
+    --rotation: 300deg;
+}
+.asosiy .raqam10 span {
+    transform:  rotate(-300deg);
+    display: inline-block;
+}
+.asosiy .raqam11{
+    --rotation: 330deg;
+}
+.asosiy .raqam11 span{
+    transform:  rotate(-330deg);
+    display: inline-block;
+}
+
+.asosiy .mil{
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 10px;
+    height: 148px;
+    background-color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform-origin: bottom;
+    z-index: 10px;
+    transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+}
+.asosiy::after {
+    content:  '';
+    position: absolute;
+    background-color: black;
+    z-index: 11;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%,  -50%);
+    border-radius: 50%;
+}
+.asosiy .mil.secund{
+    width: 5px;
+    height: 45%;
+    background-color: rgba(228, 8,8);
+    border: 1px solid white;
+}
+.asosiy .mil.daqiqa{
+    width: 8px;
+    height: 45%;
+    background-color: rgba(46, 14, 189);
+    border: 1px solid white;
+}
+.asosiy .mil.soat { 
+    width: 5px;
+    height: 38%;
+    background-color: rgba(11, 8,187);
+    border: 1px solid black;
+}
